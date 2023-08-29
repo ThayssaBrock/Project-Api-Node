@@ -1,7 +1,14 @@
 # Tópicos Importantes
 
 - O que é o Node.js?
+
+O Node. js é a ferramenta que cria um ambiente que vai nos entregar a capacidade de interpretar código JavaScript, de maneira bem similar ao navegador (backend)
+
+junto com node ele me da um apit
+
 - Para que serve o NPM (Node Package Manager)?
+gerencia os pacotes, instala, apaga e por ai vai
+
 - Para que ser o Nodemon?
 - O que é uma API?
 - O que é uma API RESTfull? 
@@ -21,8 +28,8 @@
 - npm i nome_do_pacote -D (Dependências dev)
 
 ### GIT
-- git config --global user.name "Renan Cavichi" (Configura o nome de usuário para commitar as mudanças)
-- git config --global user.email "renancavichi@gmail.com"
+- git config --global user.name "Thayssa Brock" (Configura o nome de usuário para commitar as mudanças)
+- git config --global user.email ""
 - git config --list
 
 - git init
@@ -42,3 +49,5 @@ Select -> rows e fields
 Insert, delete, updtate -> affecterows quantas linhas foram afetadas pelo query
 
 affecterows -> 1 deu certo, 0 deu erro
+jwt
+cloudFlare
