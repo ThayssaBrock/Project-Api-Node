@@ -1,6 +1,7 @@
 // const express = require('express')
 import express from 'express'
 import bodyParser from 'body-parser'
+import cors from 'cors'
 
 import {PORT} from './config.js'
 import logger from './middlewares/logger.js'
@@ -13,6 +14,7 @@ const api = express()
 // Middlewares
 api.use(logger)
 //pega o body e transforma o json em objeto
+api.use(cors())
 api.use(bodyParser.json())
 
 api.get('/', (req, res)=>{   
