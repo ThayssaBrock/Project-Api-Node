@@ -4,7 +4,7 @@ const getUser = async (req, res)=>{
     try {
         const [rows, fields] = await user.get(req.body.id)
         if (rows.length === 0) {
-            res.status(404).json({message: 'User not found'})
+            res.status(404).json({error: 'User not found'})
         } else {
             // deletar o pass
             delete rows[0].pass
@@ -12,7 +12,7 @@ const getUser = async (req, res)=>{
         }
     } catch (err) {
         console.error(err)
-        res.status(500).json({message: 'Server error'})
+        res.status(500).json({error: 'Server error'})
     }
 }
 
